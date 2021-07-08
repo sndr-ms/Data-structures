@@ -1,6 +1,8 @@
 package com.sndr.impl.tree;
 
-public class Node<Type> {
+import com.sndr.service.NodeService;
+
+public class Node<Type> implements NodeService<Type> {
 
 	private Type item;
 	private Node<Type> left,right;
